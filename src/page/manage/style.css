@@ -1,0 +1,11 @@
+.container{
+  max-width: 1000px;
+  margin:  1rem auto;
+
+}
+.addnew .container{
+  padding:  0 !important;
+}
+.addnew__btn  > button{
+  float: right;
+}

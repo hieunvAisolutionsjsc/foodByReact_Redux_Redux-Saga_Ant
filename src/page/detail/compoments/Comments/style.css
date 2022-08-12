@@ -1,0 +1,24 @@
+
+.comment{
+    margin: 0 3rem;
+}
+.omment__item{
+    margin-bottom: 1rem;
+}
+.comment__item--avatar {
+    margin-bottom: .5rem;
+}
+.comment > p {
+    max-width: 1000px;
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 0rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+@media screen and (max-width: 576px){
+.ant-col {
+    margin: 0  !important;
+}
+}

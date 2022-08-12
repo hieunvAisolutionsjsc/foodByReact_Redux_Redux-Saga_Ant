@@ -1,0 +1,67 @@
+
+.formadd{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    transform: translateY(-1000px);
+    transition: all .4s ease-in-out;
+    z-index: 1000;
+    background: rgba(0,0,0,.5);
+    opacity: 0;
+    padding-top: 3rem;
+  }
+  .formadd >.container {
+    width: 700px;
+    padding: 2rem;
+    margin: 0 auto;
+    background: rgb(237, 241, 239);
+    border-radius: 5px;
+
+  }
+  /* } */
+  .addactive{
+    transform: translate(0 , 0);
+    opacity: 1;
+  }
+  input[type="submit"]{
+    border: none;
+    background: transparent;
+    
+  }
+.formadd__item.btn{
+  padding-top: 1rem;
+  width: fit-content;
+  margin: 0 auto;
+}
+.formadd__item.btn > *{
+  margin: 0 1rem;
+}
+label{
+  font-weight: 600;
+}
+@media screen and (max-width : 768px) {
+  .formadd >.container {
+    width: 600px;
+  }
+}
+@media screen and (max-width : 640px) {
+  .formadd >.container {
+    width: 500px;
+  }
+}
+@media screen and (max-width : 570px) {
+  .formadd >.container {
+    width: 400px;
+  }
+  .formadd__item.file{
+    text-align: center;
+  }
+}
+@media screen and (max-width : 440px) {
+  .formadd >.container {
+    width: 300px;
+  }
+}

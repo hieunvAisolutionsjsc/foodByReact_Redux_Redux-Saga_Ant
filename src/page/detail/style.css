@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
+
+body , *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+*{
+    text-decoration: none;
+    outline: none;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.category >h1{
+    text-align: center;
+    padding: 2rem 0;
+}
+button{
+    cursor: pointer;
+}
+
+/* food detail */
+.fooddetail > .container{
+    max-width: 1000px;
+    overflow: hidden;
+    padding: 1rem 0;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5 ,1fr);
+ 
+    align-items: flex-start;
+    gap: 2rem;
+}
+.addcart{
+    display: flex;
+}
+.addcart button{
+    font-size: .7rem !important;
+}
+
+.addcart{
+    margin-top: 2rem;
+}
+.addcart  >button{
+     font-size: 1.1rem;
+     padding: .6rem 1rem;
+     font-weight: 600;
+     border: none;
+     box-shadow: 3px 3px 10px rgb(180, 183, 187);
+     border-radius: 5px;
+}
+.addcart  >button:nth-of-type(2){
+    margin-left: 1rem;
+    background: rgb(133, 228, 235);
+   
+}
+.comment > p {
+    max-width: 1000px;
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 0rem;
+    margin-top: 2rem;
+}
+.comment > .container{
+    max-width: 1000px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.comment__item{
+    margin-top: 1rem;
+    padding-bottom: .6rem;
+    border-bottom: 1px solid rgb(194, 186, 186);
+}
+.comment__item--avatar{
+ display: flex;
+ align-items: center;
+ margin-bottom: .4rem;
+}
+.comment__item--avatar >div{
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid rgb(185, 173, 173);
+    overflow: hidden;
+    margin-right: .4rem;
+}
+
+.comment__item--avatar > p {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.comment__item >p {
+    margin-left: 1rem;
+}
+
+/* reponsive */
+@media only screen and (max-width: 1025px){
+    .fooddetail > .container{
+        padding: 1rem;
+    }
+    .comment{
+        padding : 1rem;
+    }
+}
+@media only screen and (max-width: 1025px){
+    .fooddetail > .container{
+        grid-template-columns: repeat(1 ,1fr);
+    }
+    .fooddetail__img{
+        grid-column: 1/2;
+    }
+    .fooddetail__content{
+        grid-column: unset;
+    }
+}
+nav > .container{
+    max-width: 1000px;
+    margin: 0 auto;
+    background: rgb(64, 138, 49);
+    padding: 1rem ;
+    
+
+}
+
+nav > .container a {
+color: rgb(255, 255, 255);
+transition: all .3s ease-in-out;
+padding: .3rem 1rem;
+
+}
+nav > .container a:hover{
+border: 1px solid;
+
+background: rgb(78, 167, 226);
+}
+.mess {
+    position: fixed;
+   
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    transform: translateY(-1000px);
+    transition: all .3s ease-in-out;
+}
+.mess > .container{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    background: rgb(4, 255, 100);
+    transform: translate(50% , -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 10px;
+}
+.mess__active{
+    transform: translate(0 ,0);
+}
+.mess > .container .p{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: beige;
+    text-align: center;
+}
+.mess > .container img{
+    width: 50px;
+}
